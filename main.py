@@ -1,7 +1,7 @@
 import random
 
 def number_guessing_game():
-    number_to_guess = random.randint(1,100)
+    number_to_guess = random.randict(1,100)
     guess_history = []
     attempts = 0
 
