@@ -18,7 +18,7 @@ def romanToInt(romanInput):
 
             resultInteger += roman[romanInput[i]]
 
-    return resultInteger + roman[romanInput[i]]
+    return resultInteger + roman[romanInput[-1]]
 
 roman = input("Input roman numeral :")
 
