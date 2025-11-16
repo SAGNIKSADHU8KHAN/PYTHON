@@ -4,7 +4,7 @@ def rotations(a, n, a_size):
 
 def rotate(a, a_size):
     temp = a[0]
-    for i in range(a, a_size-1):
+    for i in range(a_size-1):
         a[i]= a[i+1]
     a[a_size -1 ]= temp
 
