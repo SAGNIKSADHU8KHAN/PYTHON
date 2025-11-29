@@ -12,4 +12,14 @@ def water(a, a_size):
 
     right_tallest[a_size -1] = a[a_size-1]
     for i in range(a_size -2, -1, -1):
+        right_tallest[i] = max(right_tallest[i+1], a[i])
+
+    for i in range(0, a_size):
+        water += min(left_tallest[i], right_tallest[i]) - a[i]
+
+    return water
+
+a = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+bars = len(a)
+print("water=", water(a,bars))
         
