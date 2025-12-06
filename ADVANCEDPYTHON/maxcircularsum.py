@@ -27,7 +27,7 @@ def maxcircularsum(a ):
         maxwrap = a[i]
         a[i] = -a[i]
 
-    max_wrap = max_wrap +kadane(a)
+    max_wrap = max_wrap + kadane(a)
 
     if max_wrap > max_kadane:
         return max_wrap
